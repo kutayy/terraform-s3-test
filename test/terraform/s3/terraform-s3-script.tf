@@ -37,7 +37,6 @@ module "aws_s3" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
   bucket = var.BUCKET
-  acl    = "private"
   force_destroy = true
 }
 
